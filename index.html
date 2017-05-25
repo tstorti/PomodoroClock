@@ -9,29 +9,56 @@
 
    <!--jQuery, linked from a CDN-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-     <!--Add Bootstrap from CDN-->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-   <!-- Add Bootstrap theme from Bootswatch-->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
+   <!--link to google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="css/style.css">  
 
     
   
 </head>
 <body>
-   <div class="container">
-      <div>Clock 1</div>
-      <div id="startingTime1">startingTime</div>
-      <div id="timeLeft1">Time Left</div>
-      <button id="start1">Start Timer 1</button>
-      <button id="stop1">Stop Timer 1</button>
-   </div>
-   <div class="container">
-      <div>Clock 2</div>
-      <div id="startingTime2">startingTime</div>
-      <div id="timeLeft2">Time Left</div>
-      <button id="start2">Start Timer 2</button>
-      <button id="stop2">Stop Timer 1</button>
+   <div class="header1">Pomodoro Clock</div>
+   <div class="container center-content">
+      <div class="timerPanel workPanel">
+         <div class="header2">Work Timer</div>
+         <div class="timeDisplay" id="timeLeft1">Time Left</div>
+         <div class="container center-content">
+            <div>
+               <div>
+                  <button class="timerButton" id="start1">Start Work Timer</button>
+                  <button class="timerButton" id="stop1">Stop Work Timer</button>
+               </div>
+               <div>
+                  <input class="inputField" id="inputTime1" type="text" placeholder="Set new duration" value="">
+               </div>
+               <div>
+                  <button class="timerButton" id="set1">Set Work Timer</button>
+                  <button class="timerButton" id="reset1">Reset Work Timer</button>
+               </div>
+            </div>
+         </div>
+         
+         
+      </div>
+      <div class="timerPanel breakPanel">
+         <div class="header2">Break Timer</div>
+         <div class="timeDisplay" id="timeLeft2">Time Left</div>
+         <div class="container center-content">
+            <div>
+               <div>
+                  <button class="timerButton" id="start2">Start Break Timer</button>
+                  <button class="timerButton" id="stop2">Stop Break Timer</button>
+               </div>
+               <div>
+                  <input class="inputField" id="inputTime2" type="text" placeholder="Set new duration" value="">
+               </div>
+               <div>
+                  <button class="timerButton" id="set2">Set Break Timer</button>
+                  <button class="timerButton" id="reset2">Reset Break Timer</button>  
+               </div>
+            </div>
+         </div>   
+      </div>
    </div>
 
    <!--link to javascript file-->

@@ -1,0 +1,63 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.breakPanel{
+	background-color:#117A65;
+}
+
+.container{
+	display: flex;
+}
+
+.center-content{
+	justify-content: center;	
+}
+
+.header1{
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+	margin-bottom:50px;
+}
+
+.header2{
+	margin-top:50px;
+	font-size:18px;
+	text-align:center;
+}
+
+.inputField{
+	
+	margin-left:50px;
+	margin-top:20px;
+	padding:5px;
+}
+
+.timerButton{
+	color:white;
+	background-color:#283747;
+	border-color:#424949 ;
+	padding:10px;
+	margin:10px;
+	border-radius:5px;
+}
+
+.timeDisplay{
+	font-size:36px;
+	font-weight:bold;
+	padding:20px;
+	text-align:center;
+}
+
+.timerPanel{
+	padding:20px;
+	width:400px;
+	height:400px;
+	margin:10px;
+	border-radius:50%;
+}
+
+.workPanel{
+	background-color: #922B21;
+}
